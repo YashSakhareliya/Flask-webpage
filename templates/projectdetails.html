@@ -1,0 +1,21 @@
+<div class="border-bottom row" style="margin-bottom:12px; margin-top:8px; color:rgb(80,80,80)"">
+  <div class="col-9">
+        <h4 style ="margin-bottom:4px;">
+          {{project['title']}}
+        </h4>
+    
+    
+      {% if 'platform' in project %}
+      <div>
+        <b>Platfrom: </b>{{project['platform']}}
+      </div>
+      {% endif %}
+    
+      <div>
+        <b>description: </b>{{project['description']}}
+      </div>
+  </div>
+  <div class="col-3">
+    <button type="button" class="btn btn-outline-primary">View Project</button>
+  </div>
+  </div>
